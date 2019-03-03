@@ -1,0 +1,128 @@
+body {
+  margin: 20px;
+}
+.pricingBox {
+  border: 1px solid lightgray;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.pricingDetails {
+  width: 100%;
+  padding: 0;
+}
+
+.pricingDetails li {
+  width: 100%;
+  list-style: none;
+  height: 30px;
+}
+.pricingDetails li div {
+  display: inline-block;
+}
+.pricingDetails li div:nth-child(2) {
+  float: right;
+}
+
+hr {
+  border: none;
+  background: lightgray;
+  height: 1px;
+}
+
+.totalAmount {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pickupSavings {
+  color: red;
+}
+
+.pickupLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.productDetails {
+  display: inline-flex;
+}
+
+.productDetails > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.productDetails .details {
+  display: inline-block;
+}
+
+.productDetails .details div {
+  display: inline-block;
+}
+.productDetails .details div:nth-child(2) {
+  float: right;
+}
+
+.promoButton {
+  margin-left: 10px;
+  border-radius: 17px;
+
+  background: #fff;
+  border: 1px solid gray;
+  outline: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  height: 32px;
+}
+
+input {
+  height: 25px;
+}
+.actualPrice {
+  font-size: 16px;
+  color: gray;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  font-size: 11px;
+  width: 120px;
+  background-color: #fff;
+  text-align: center;
+  padding: 12px;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid lightgray;
+}
+
+@media only screen and (max-width: 375px) {
+  .pricingDetails li div {
+    display: block;
+  }
+  .pricingDetails li div:nth-child(2) {
+    float: none;
+  }
+  .pricingDetails li div:nth-child(1) {
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .pricingDetails li {
+    height: auto;
+  }
+
+  .productDetails > div {
+    display: block;
+  }
+  .productDetails {
+    display: block;
+  }
+
+  .imageContainer {
+    text-align: center;
+  }
+}
