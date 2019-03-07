@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <button onClick={() => this.handleShowPrice()}>Show Price</button>
+          <button onClick={() => this.handleShowPrice()}>Show/Hide Price</button>
           {showPrice}
         </div>
       </Provider>
