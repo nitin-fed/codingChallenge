@@ -1,11 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow, configure  } from 'enzyme'
 import App from './App';
+import Adapter from 'enzyme-adapter-react-16'
 
+configure({ adapter: new Adapter() });
 
-
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe("App  Component", () => {
+  it('App should render without crashing', () => {
+    const component = shallow(<App />);
+    console.log(component.debug());
+    const wrapper = component.find('button');
+    expect(wrapper.length).toBe(1);
+  })
+})

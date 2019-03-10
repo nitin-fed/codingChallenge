@@ -50,9 +50,9 @@ class PricingDetails extends Component {
 
 const mapStateToProps = state => {
   return {
-    pickupDetails: state.pickDetails,
-    pricing: state.pricing,
-    itemDetails: state.itemDetails
+    pickupDetails: state.productReducer.pickDetails,
+    pricing: state.productReducer.pricing,
+    itemDetails: state.productReducer.itemDetails
   };
 };
 

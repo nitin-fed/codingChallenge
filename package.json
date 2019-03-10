@@ -2,9 +2,9 @@
   "name": "pricingdetails",
   "version": "0.1.0",
   "private": true,
+  "react": "^16.8.3",
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
     "react-scripts": "2.1.5",
@@ -25,5 +25,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0"
+  }
 }

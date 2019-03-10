@@ -30,7 +30,7 @@ class Promocode extends Component {
   render() {
     
     let discountInfo = '';
-    if(this.props.isPromoCodeApplied && this.props.discountCount == 1){
+    if(this.props.isPromoCodeApplied && this.props.discountCount === 1){
       discountInfo = <p>Congratulations! 10% discount applied.</p>
     } else if(this.props.discountCount > 1) {
       discountInfo = <p>Discount already applied.</p>

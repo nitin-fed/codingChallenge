@@ -1,21 +1,10 @@
 import React, { Component } from "react";
 import PriceDetails from "./containers/PriceDetails";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from "redux-thunk";
-
-import reducer from "./reducer/reducer";
 import "./App.css";
-
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
-const store = createStore(reducer, 
-  composeEnhancer(applyMiddleware(thunk)))
 
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
       showPrice: true
     };
@@ -31,12 +20,10 @@ class App extends Component {
     }
 
     return (
-      <Provider store={store}>
-        <div className="App">
-          <button onClick={() => this.handleShowPrice()}>Show/Hide Price</button>
-          {showPrice}
-        </div>
-      </Provider>
+      <div className="App">
+        <button onClick={() => this.handleShowPrice()}>Show/Hide Price</button>
+        {showPrice}
+      </div>
     );
   }
 }

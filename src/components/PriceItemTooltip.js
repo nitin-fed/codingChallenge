@@ -41,7 +41,7 @@ class PriceItem extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    tooltipText: state.tooltipText
+    tooltipText: state.productReducer.tooltipText
   }
 }
 

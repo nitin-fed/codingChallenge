@@ -25,12 +25,11 @@ class ItemDetails extends Component {
   render() {
     let productDetails = null;
     if (this.state.toggleProductDetails) {
-        if(this.props.type == 'productDetails') {
+        if(this.props.type === 'productDetails') {
             productDetails = <ProductDetails />;
-        } else if(this.props.type == 'promoCode') {
+        } else if(this.props.type === 'promoCode') {
             productDetails = <PromoCode />;
         }
-      
     }
 
     return (
